@@ -61,6 +61,7 @@ public class ProductsAdapter extends ArrayAdapter <Product> {
         View view = inflater.inflate(R.layout.products_form, parent, false);
 
         MyViewHolder viewHolder = new MyViewHolder();
+        product=dataList.get(position);
         listview = (ListView) view.findViewById(R.id.List_view);
         viewHolder.mProName = (TextView) view.findViewById(R.id.name1);
         viewHolder.mProprice = (TextView) view.findViewById(R.id.price1);
